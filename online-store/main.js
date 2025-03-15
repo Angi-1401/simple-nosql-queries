@@ -143,7 +143,7 @@ async function main() {
         { $match: { ordersCount: { $gt: 1 } } },
       ])
       .toArray();
-    console.log("Users with multiple orders:", usersWithMultipleOrders);
+    console.log("Users with multiple orders:", usersWithMultipleOrders); // Returns an empty array
 
     // Retrieve all products with only its name and price
     const simpleProducts = await products
